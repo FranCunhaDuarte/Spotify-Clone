@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@theme {
+  --color-primary: oklch(0.72 0.11 178);
+}
+
+
+@layer components {
+  .main-home-dashboard{
+    grid-template-areas: 
+    "top-banner top-banner top-banner"
+    "navbar navbar navbar"
+    "left-menu main-content right-menu"
+    "mediaplayer mediaplayer mediaplayer"
+    ;
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  .top-banner { grid-area: top-banner; }
+  .navbar { grid-area: navbar; }
+  .left-menu { grid-area: left-menu; }
+  .main-content { grid-area: main-content; }
+  .right-menu { grid-area: right-menu; }
+  .mediaplayer { grid-area: mediaplayer; }
+}
