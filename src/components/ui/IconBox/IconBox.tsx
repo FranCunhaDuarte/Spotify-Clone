@@ -7,8 +7,8 @@ const IconBox = (props: IconBox) => {
   return (
     <>
         
-        <div className="relative group cursor-pointer">
-            <div className="duration-300 delay-500 group-hover:opacity-100 opacity-0 pointer-events-none absolute left-1/2 text-white -translate-x-1/2 bg-background-elevated-highlight px-3 py-1 rounded-[5px] shadow-[0px_14px_18px_0px_rgba(0,0,0,0.59)]" style={{top: direction=='down' ? '100%' : '', bottom: direction=='up' ? '100%' : ''}}><span>{title}</span></div>
+        <div className="relative group cursor-pointer hover-enter-only">
+            <div className="title opacity-0 pointer-events-none absolute left-1/2 text-white -translate-x-1/2 bg-background-elevated-highlight px-3 py-1 rounded-[5px] shadow-[0_16px_24px_rgba(0,_0,_0,_.3),_0_6px_8px_rgba(0,_0,_0,_.2)]" style={{top: direction=='down' ? 'calc(100% + 5px)' : '', bottom: direction=='up' ? 'calc(100% + 5px)' : ''}}><span className="text-nowrap">{title}</span></div>
             {children}
         </div>
     </>

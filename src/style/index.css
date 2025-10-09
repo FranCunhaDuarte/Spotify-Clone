@@ -42,7 +42,19 @@
   
   --color-decorative-base: #fff;
   --color-decorative-subdued: #292929;
+
+  --color-border-highlight: #404040;
 }
+
+@layer utilities {
+
+  .hover-enter-only:hover .title {
+    transition: opacity 0.3s ease-out .5s;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 
 @layer components {
