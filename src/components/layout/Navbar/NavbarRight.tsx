@@ -6,12 +6,12 @@ import { ProfileMenu } from '../../ui/ProfileMenu/ProfileMenu'
 export const NavbarRight = () => {
   return (
     <>
-        <div className="flex flex-row items-center justify-end overflow-visible">
+        <div className="flex flex-row gap-2 items-center justify-end overflow-visible">
             <IconBox title="What's New" direction='down' position='center'>
-                <Bell className='h-full w-7 m-3' />
+                <Bell className='h-full w-6 m-3' />
             </IconBox>
             <IconBox title="Friends Activity" direction='down' position='center'>
-                <Friends className='h-full w-7 m-3' />
+                <Friends className='h-full w-6 m-3' />
             </IconBox>
             <ProfileMenu />
         </div>

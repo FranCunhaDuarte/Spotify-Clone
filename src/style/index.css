@@ -74,21 +74,21 @@
   .mediaplayer { grid-area: mediaplayer; }
 
   body {
-    font-family: 'Spotify Regular', sans-serif;
+    font-family: 'spotify', sans-serif;
   }
 
   h1, h2 {
-    font-family: 'Spotify Title Variable', sans-serif;
+    font-family: 'spotify', sans-serif;
   }
 
   strong, b {
-    font-family: 'Spotify Bold', sans-serif;
+    font-family: 'spotify', sans-serif;
   }
 }
 
 
 @font-face {
-  font-family: 'Spotify Bold';
+  font-family: 'spotify';
   src: url('/fonts/Spotify-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
@@ -96,7 +96,7 @@
 }
 
 @font-face {
-  font-family: 'Spotify Regular';
+  font-family: 'spotify';
   src: url('/fonts/Spotify-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -104,9 +104,9 @@
 }
 
 @font-face {
-  font-family: 'Spotify Title Variable';
+  font-family: 'spotify';
   src: url('/fonts/Spotify-title-variable.woff2') format('woff2');
-  font-weight: 100 900; /* rango si es variable */
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
