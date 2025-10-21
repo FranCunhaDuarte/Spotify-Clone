@@ -2,10 +2,17 @@ import Minimize from '../../../assets/svg/minimize.svg?react'
 import IconBox from '../../ui/IconBox/IconBox'
 import Plus from '../../../assets/svg/plus.svg?react'
 
-export const HeaderSideBar = () => {
+export type HeaderSideBarProp = {
+    hoverLeftSideBar: boolean
+}
+
+export const HeaderSideBar = (props: HeaderSideBarProp) => {
+
+    const {hoverLeftSideBar} = props
+    
   return (
     <>
-        <div className="w-full flex items-center justify-between group px-4 pt-4">
+        <div className="w-full flex items-center justify-between group px-4">
             <IconBox title='Collapse Your Library' direction='up' position='left'>    
                 <div className="flex h-full items-center justify-start gap-1.5 cursor-pointer">
                     <div className='max-w-0 group-hover:max-w-[25px] transition-all duration-300'>
