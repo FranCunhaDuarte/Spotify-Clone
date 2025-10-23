@@ -34,7 +34,7 @@ export const MediaItem = (props: LibraryItem) => {
                     </div>
                     <div className="h-full pl-4 flex flex-col">
                         <div className="">
-                            <span className="text-[1.05rem]">{title}</span>
+                            <span className="text-[1.05rem] truncate">{title}</span>
                         </div>
                         <div className="flex gap-1.5 items-center text-text-subdued text-[.9rem]">
                             <span>{type.charAt(0).toUpperCase() + type.slice(1)}</span>

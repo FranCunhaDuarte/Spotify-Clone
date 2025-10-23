@@ -6,7 +6,7 @@ import { NavbarRight } from './NavbarRight'
 export const Navbar = () => {
   return (
     <>
-        <div className="relative navbar h-[48px] max-h-[48px] w-full flex justify-between">
+        <div className="relative navbar h-full w-full flex items-center justify-between py-2">
             <NavbarLeft />
             <NavbarCenter />
             <NavbarRight />

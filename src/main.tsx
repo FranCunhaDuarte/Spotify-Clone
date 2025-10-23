@@ -1,17 +1,18 @@
 import { createRoot } from 'react-dom/client'
 import './style/index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home } from './pages/Home';
+import { Dashboard } from './pages/Dashboard';
 import { TokenContext } from './contexts/context';
 import { useToken } from './hooks/useToken';
+import { Home } from './components/sections/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: Home,
-    // children: [
-    //   { index: true,  }
-    // ]
+    element: <Dashboard />,
+    children: [
+      { index: true, element: <Home />}
+    ]
   }
 ]);
 

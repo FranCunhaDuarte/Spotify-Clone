@@ -12,7 +12,7 @@ export const NavbarCenter = () => {
 
   return (
     <>
-        <div className='absolute top-0 left-1/2 -translate-x-1/2 flex flex-row items-center justify-center'>
+        <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-row items-center justify-center'>
             <Link to='/' className='rounded-full'>
                 <IconBox title='Home' direction='down'>
                 <div className='bg-background-elevated-base p-3 rounded-full mr-2 hover:bg-background-elevated-highlight transition-all duration-300'>

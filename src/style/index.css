@@ -18,6 +18,8 @@
 
 
 @theme {
+  --gap: 8px;
+
   --color-background-base: #121212;
   --color-background-highlight: #1f1f1f;
   --color-background-press: #000;
@@ -68,9 +70,9 @@
     "main-content"
     "mediaplayer"
     ;
-
+    
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: calc(48px + var(--gap)) minmax(0,100vh) calc(48px + var(--gap));
   }
 
   .navbar { grid-area: navbar; } 
@@ -96,6 +98,7 @@
   .scroll-hidden::-webkit-scrollbar {
     display: none;
   }
+
 }
 
 

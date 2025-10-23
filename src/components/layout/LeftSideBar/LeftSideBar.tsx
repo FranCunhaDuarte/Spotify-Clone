@@ -8,7 +8,7 @@ export const LeftSideBar = () => {
 
   return (
     <>
-        <div onMouseLeave={() => setHover(false)} onMouseEnter={() => setHover(true)} className="bg-background-base rounded-[7px] grid grid-rows-[60px_60px_1fr] items-center">
+        <div onMouseLeave={() => setHover(false)} onMouseEnter={() => setHover(true)} className="bg-background-base rounded-[7px] grid grid-rows-[60px_60px_1fr] items-center w-[20vw]">
             <HeaderSideBar hoverLeftSideBar={hover} />
             <PlaylistList />
         </div>
