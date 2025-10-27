@@ -1,25 +1,24 @@
+import type { Image, ExternalUrls } from "./common"
 
-
-
-export interface Root {
+export interface AlbumsRoot {
   albums: Albums
 }
 
 export interface Albums {
   href: string
-  items: Item[]
+  items: AlbumItem[]
   limit: number
   next: string
   offset: number
-  previous: any
+  previous: string | null
   total: number
 }
 
-export interface Item {
+export interface AlbumItem {
   album_type: string
-  artists: Artist[]
+  artists: ArtistSummary[]
   available_markets: string[]
-  external_urls: ExternalUrls2
+  external_urls: ExternalUrls
   href: string
   id: string
   images: Image[]
@@ -31,7 +30,7 @@ export interface Item {
   uri: string
 }
 
-export interface Artist {
+export interface ArtistSummary {
   external_urls: ExternalUrls
   href: string
   id: string
@@ -39,20 +38,3 @@ export interface Artist {
   type: string
   uri: string
 }
-
-export interface ExternalUrls {
-  spotify: string
-}
-
-export interface ExternalUrls2 {
-  spotify: string
-}
-
-export interface Image {
-  height: number
-  url: string
-  width: number
-}
-
-
-

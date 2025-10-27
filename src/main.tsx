@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import './style/index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Dashboard } from './pages/Dashboard';
-import { TokenContext } from './contexts/context';
+import { TokenContext } from './contexts/tokenContext';
 import { useToken } from './hooks/useToken';
 import { Home } from './components/sections/Home/Home';
 
@@ -28,6 +28,3 @@ export const Main  = () =>{
 }
 
 createRoot(document.getElementById('root')!).render(<Main/>)
-
-
-// TEMA A VER PENDIENTE, USECONTEXT PARA EL TOKEN DE LA API AL SERVER DE BACK QUE HICE

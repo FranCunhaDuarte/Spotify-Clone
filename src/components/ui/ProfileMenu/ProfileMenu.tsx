@@ -25,7 +25,7 @@ export const ProfileMenu = () => {
 
   return (
     <>
-        <div ref={menuRef} className="relative">
+        <div ref={menuRef} className="relative z-[100]">
             <IconBox title="Username" direction="down" position="right">
               <div onClick={() => setMenuOpen(!menuOpen)} className="bg-background-base p-2 rounded-full hover:scale-105 duration-300 ease-in-out transition-transform cursor-pointer">
                   <img src="/media/images/avatar.jpg"  alt="avatar" className="w-8 rounded-full" />
