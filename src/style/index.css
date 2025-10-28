@@ -73,6 +73,7 @@
     
     grid-template-columns: 1fr;
     grid-template-rows: calc(48px + var(--gap)) minmax(0,100vh) calc(72px + var(--gap));
+    max-width: 100vw;
   }
 
   .navbar { grid-area: navbar; } 

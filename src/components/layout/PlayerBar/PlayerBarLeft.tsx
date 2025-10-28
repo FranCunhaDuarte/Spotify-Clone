@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export const PlayerBarLeft = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full pl-2">
         <div className="h-full flex items-center gap-3">
           <div className="h-full">
             <img src="/media/images/avatar.jpg" alt="" className="h-full rounded-[5px]" />
