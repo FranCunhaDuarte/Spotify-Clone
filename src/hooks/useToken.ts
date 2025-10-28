@@ -37,5 +37,4 @@ export const useToken = (): Token => {
     },[])
 
     return { token, loading, error }
-
 }

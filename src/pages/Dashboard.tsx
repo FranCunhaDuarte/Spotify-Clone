@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { MainContent } from "../components/layout/MainContent/MainContent"
 import { Navbar } from "../components/layout/Navbar/Navbar"
+import { PlayerBar } from "../components/layout/PlayerBar/PlayerBar"
 
 export const Dashboard = () => {
   return (
@@ -10,7 +11,7 @@ export const Dashboard = () => {
             <MainContent>
               <Outlet />
             </MainContent>
-            <div className="mediaplayer h-full py-2"></div>
+            <PlayerBar />
         </main>
     </>
   )
